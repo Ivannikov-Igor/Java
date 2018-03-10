@@ -1,5 +1,5 @@
 
-public class massive {
+public class massivehw4 {
 	public static void main(String[] args) {
 		int[] mas1 = new int[50];
 		for (int i = 0; i < mas1.length; i++) {
