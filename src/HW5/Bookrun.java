@@ -1,4 +1,4 @@
-package HW5;
+package HW5;	
 
 import java.util.List;
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public class Bookrun {
 
 		Book[] books = { book1, book2, book3 };
 
-		System.out.println("Book by Claire L.Evan: " + booksByAuthor("Claire L.Evan", books));
+		System.out.println("Book by Claire L.Evan: " + booksByAuthor("Claire L.Evans", books));
 		System.out.println("Book by Skynet: " + booksByPublisher("Skynet", books));
 		System.out.println("Book after 2009: " + booksAfterYear(2009, books));
 

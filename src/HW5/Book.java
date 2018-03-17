@@ -1,5 +1,7 @@
 package HW5;
 
+import java.util.Arrays;
+
 public class Book {
 	private static int nextId = 1;
 	private final int id = nextId++;
@@ -61,20 +63,22 @@ public class Book {
 
 	public String getBindingType() {
 		return bindingType;
-
-//	    @Override
-//	    public String toString() {
-//	        return "Book{" +
-//	                "id=" + id +
-//	                ", name='" + name + '\'' +
-//	                ", authors=" + Arrays.toString(authors) +
-//	                ", publisher='" + publisher + '\'' +
-//	                ", year=" + year +
-//	                ", pages=" + pages +
-//	                ", price=" + price +
-//	                ", bindingType='" + bindingType + '\'' +
-//	                '}';
-	   }
+	}
+		@Override
+		public String toString() {
+	        return "Book{" +
+	                "id=" + id +
+	                ", name='" + name + '\'' +
+	                ", authors=" + Arrays.toString(authors) +
+	                ", publisher='" + publisher + '\'' +
+	                ", year=" + year +
+	                ", pages=" + pages +
+	                ", price=" + price +
+	                ", bindingType='" + bindingType + '\'' +
+	                '}';
+	       
+	    
+	         }
 	
 	}
 
