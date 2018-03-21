@@ -55,6 +55,7 @@ public class Main {
 					System.out.println(sweet.getName() + " и ее вес " + sweet.getWeight() + " грамм");
 					weight = weight + sweet.getWeight();
 					System.out.println("Теперь вес подарка: " + weight + " грамм");
+					
 					// System.out.println(sweet);
 				} else {
 					continue;
@@ -65,3 +66,4 @@ public class Main {
 		}
 	}
 }
+///...
