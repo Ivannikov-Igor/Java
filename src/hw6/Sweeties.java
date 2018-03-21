@@ -1,14 +1,21 @@
 package hw6;
 
+import java.util.Arrays;
+
 public class Sweeties {
-	private final String name;
-	private int weight;
+	
+	private int nextId = 0;
+	private int id = nextId++;
+	private String sweetietype;
+	private String name;
+	private double weight;
 	private int sugarcontent;
 	private String type;
 	private double cost;
 
-	public Sweeties(String name, int weight, int sugarcontent, String type, double cost) {
+	public Sweeties(String name, String sweetietype, int weight, int sugarcontent, String type, double cost) {
 		this.name = name;
+		this.sweetietype = sweetietype;
 		this.weight = weight;
 		this.sugarcontent = sugarcontent;
 		this.type = type;
@@ -24,7 +31,7 @@ public class Sweeties {
 		this.cost = cost;
 	}
 
-	public int getWeight() {
+	public double getWeight() {
 		return weight;
 	}
 
@@ -50,6 +57,19 @@ public class Sweeties {
 
 	public String getName() {
 		return name;
+	}
+	@Override
+	public String toString() {
+		return id + " " + name + " " + sweetietype +  " " + weight + " " + sugarcontent + " " + type + " " + " " + cost;
+	}
+
+	public String getSweetietype() {
+		return sweetietype;
+	}
+
+	public static int get(int sweet_index) {
+		// TODO Auto-generated method stub
+		return sweet_index;
 	}
 
 }
